@@ -1,87 +1,51 @@
 ---
 layout: page
-title: About Pixyll
+title: About
 permalink: /about/
 tags: about
 ---
 
-This Jekyll theme was crafted with <3 by [John Otander](http://johnotander.com)
-([@4lpine](https://twitter.com/4lpine)).
+My Name is Phil Cooper-King, Republic of Almost is the name I chose to house some of my hobby creations that aren't just sketch projects. The content here is for my enjoyment and learning.
 
-Checkout the [Github repository](https://github.com/johnotander/pixyll) to download it,
-request a feature, report a bug, or contribute. It's free, and open source
-([MIT](http://opensource.org/licenses/MIT)).
+Feel free to ping me if you want to get in contact.
 
-Thanks to the following:
+<div class="py2">
+  {% if site.ajaxify_contact_form %}
+    <form class="form-stacked">
+      <label>
+        Email
+        <input type="text" name="email" class="field-light" placeholder="{{ site.text.contact.email }}">
+      </label>
 
-* [BASSCSS](http://basscss.com)
-* [Jekyll](http://jekyllrb.com)
-* [Refills](http://refills.bourbon.io/)
-* [Type Scale](http://type-scale.com/)
+      <label>
+        Content
+        <textarea type="text" name="content" class="field-light" rows="5" placeholder="{{ site.text.contact.content }}" style="resize: vertical"></textarea>
+      </label>
 
-List of contributors:
+      <input type="text" name="_gotcha" style="display:none" />
 
-- Aaron S. Hawley
-- Adam Menges
-- Alex Claman
-- Alex Johnson
-- Alex Touchet
-- Allister Antosik
-- Amin Bandali
-- Anders Nissen
-- Andrea Margiovanni
-- Andrzej Ośmiałowski
-- Anuj More
-- Arvind Chembarpu
-- Assaf Gelber
-- Barry vd. Heuvel
-- Bartek Krzemień
-- Bartek Krzemień
-- Bennett Rogers
-- Brian Gaid
-- Brian Hurst
-- Chee Yeo
-- Cody Chan
-- Cristian Henrique
-- David Ernst
-- Donate Altenburger
-- Fernando Mantoan
-- Gurchet Rai
-- Harish Narayanan
-- Jehan Tremback
-- Jiaxi Gu (Isaac)
-- John Otander
-- Jordan Danielewski
-- Josh Buxton
-- Kirill Kulikov
-- Kyle Maxwell
-- Marta Sztybor
-- Martin Wagner
-- Matthew Graybosch
-- Maxim Tsoy
-- Mete Balci
-- Mike Lloyd
-- Mikhail Grachev
-- mindwind
-- Nick Rakochy
-- Nikolay Georgiev
-- Oliver Hamlet
-- Onur (e0i)
-- Praveer Gupta
-- Rassol (Karmeye)
-- Ricky Han
-- Roberto Pesando
-- Ryan Jacobs
-- Scott Martin
-- Selim Eren Bekçe
-- Shruti Rijhwani
-- Steef Hegeman
-- Tehmasp Chaudhri
-- Thomas Galvin
-- Timothy Gu
-- Tom Kraak
-- Vishnu Ks
-- Vladislav Arbatov
-- Yaroslav Yadrishnikov
-- Yee Chie Tu
-- Yeou Chien
+      <button type='submit' class="button button-blue button-big mobile-block">{{ site.text.contact.submit }}</button>
+    </form>
+  {% else %}
+    <form action="https://formspree.io/{{ site.email }}" method="POST" class="form-stacked">
+      <label>
+        Email
+        <input type="text" name="email" class="field-light" placeholder="{{ site.text.contact.email }}">
+      </label>
+      <label>
+        Content
+        <textarea type="text" name="content" class="field-light" rows="5" placeholder="{{ site.text.contact.content }}" style="resize: vertical"></textarea>
+      </label>
+
+      <input type="hidden" name="_next" value="{{ site.baseurl }}/thanks/" />
+      <input type="hidden" name="_subject" value="{{ site.text.contact.subject }}" />
+      <input type="text" name="_gotcha" style="display:none" />
+
+      <input type="submit" class="button button-blue button-big mobile-block" value="{{ site.text.contact.submit }}">
+    </form>
+  {% endif %}
+</div>
+
+{% if site.ajaxify_contact_form %}
+  {% include ajaxify_content_form.html %}
+{% endif %}

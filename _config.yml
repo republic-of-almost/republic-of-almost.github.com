@@ -2,9 +2,9 @@
 title:       Republic Of Almost 
 email:       phil@cooperking.net
 author:      Phil Cooper-King
-description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
+description: "Stuff from ROA's shallow vaults"
 baseurl:     ""
-url:         "http://pixyll.com"
+url:         "http://republicofalmost.com"
 date_format: "%b %-d, %Y"
 header_pages:
  - about.md
