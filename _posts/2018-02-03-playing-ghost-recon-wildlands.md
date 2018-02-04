@@ -3,7 +3,7 @@ layout:     post
 title:      Playing Wildlands
 date:       2018-02-03
 summary:    Shhh! did you hear that explosion?
-categories: gamedev hello
+categories: playing
 ---
 
 
