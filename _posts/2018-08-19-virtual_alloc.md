@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Virtual Memory
-date:       2018-08-11
+date:       2018-08-19
 summary:    Allocating virtual memory in windows
 categories: C/C++
 ---
