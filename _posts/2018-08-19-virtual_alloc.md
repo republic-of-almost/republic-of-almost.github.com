@@ -49,6 +49,8 @@ main() {
         return 0;
 }
 
+{% endhighlight %}
+
 Care must be taken that you only write within the pages you have allocated in the second call.
 
 [MSDN:VirtualAlloc](https://msdn.microsoft.com/en-us/library/windows/desktop/aa366887(v=vs.85).aspx)
