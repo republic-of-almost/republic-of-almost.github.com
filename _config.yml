@@ -122,9 +122,10 @@ permalink: /:year/:month/:day/:title.html
 paginate:     4
 sass:
   style: compressed
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
+
+gems: [
+  'jekyll-paginate',
+]
 # https://github.com/jekyll/jekyll/issues/2938
 exclude:
   - Gemfile
