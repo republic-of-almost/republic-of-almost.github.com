@@ -10,7 +10,7 @@ Virtual memory has some pretty cool tricks, however what are the basics of just
 using it.
 
 {% highlight c %}
-/* alloc.c */
+/* valloc.c */
 
 #include <Windows.h>
 
