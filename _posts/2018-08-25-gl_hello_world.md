@@ -71,5 +71,5 @@ file to include `color_change.c`
 ./bin/demo
 {% endhighlight %}
 
-You should see something like [this](http://cooperking.net/).
+You should see something like [this](http://cooperking.net/00_clear_color).
 
